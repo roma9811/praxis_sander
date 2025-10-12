@@ -1,0 +1,160 @@
+ /* =========================
+   Navbar
+========================= */
+.navbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: white;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+ 
+.nav__list li{
+  display: flex;
+  align-content: center;
+}
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 180px;
+  transition: width 0.3s ease;
+}
+/* =========================
+   Nav Links
+========================= */
+.nav_link, .nav__list button, .nav__list a, .vorsorge__btn, .untersuchung__btn {
+  color: #555;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.24);
+  font-size: 1rem;
+  position: relative;
+}
+
+ .nav__list button,
+.nav__list a{
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Эффект плавного подъёма при hover */
+.nav__list button:hover,
+.nav__list a:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.411);
+  border-radius: 12px;
+}
+
+
+.vorsorge__btn, .untersuchung__btn {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Popover menu (MUI) */
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  z-index: 99999 !important;
+  top: 80px !important;
+  padding: 5px !important;
+}
+.nav__list ul{
+  display: flex;
+  gap: 5rem;
+}
+
+/* =========================
+   Burger Menu
+========================= */
+.bm-burger-button {
+  display: none;
+  width: 26px; height: 20px;
+  position: relative;
+}
+
+.bm-burger-bars, .bm-cross { background: #A82834; }
+
+.bm-cross {
+  width: 5px !important;
+  height: 35px !important;
+}
+
+.bm-cross-button { right: 25px !important; top: 20px !important; }
+
+.bm-menu-wrap { top: 0 !important; }
+
+.bm-menu {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  font-size: 1.3rem;
+  text-align: center;
+  background: linear-gradient(rgba(255,255,255,.8), #fff),
+              url("../../Assets/Praxis-images/burger_background.png") no-repeat center / cover;
+}
+
+.bm-item, .burger__box li {
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: 50px;
+}
+
+/* Burger Footer */
+.burger__footer {
+  background: #F0EEEE;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.46);
+}
+
+.burger__footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.burger__footer li { 
+  display: flex; 
+  align-items: center; 
+  font-size: 1.1rem; 
+}
+.burger__menu{
+  position: absolute;
+  right: 30px;
+}
+/* =========================
+   Media Queries
+========================= */
+@media screen and (max-width: 1023px) {
+  .nav__list { display: none; }
+  .bm-burger-button { display: block; }
+  .logo img { width: 150px; }
+  .nav__box { padding: 0; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+   .nav__list ul{gap: 3rem;padding: 5px;}
+   .css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {z-index: 99999 !important;top: 120px !important;}
+}

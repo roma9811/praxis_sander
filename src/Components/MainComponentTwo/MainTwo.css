@@ -1,0 +1,96 @@
+ /* =========================
+   Main Two Section
+========================= */
+.main__two {
+  height: auto;
+  padding: 60px 0;
+  background-color: #F7F7F7;
+  color: #555;
+}
+
+.leistungen__text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leistungen__text h1 {
+  font-size: 1.8rem;
+  color: #555;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.288);
+}
+
+/* Untersuchungen Container */
+.untersuchungen__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 45px;
+  justify-items: center;
+}
+
+.untersuchungen__box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.397);
+}
+
+.untersuchungen__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.untersuchungen__box p {
+  font-size: 1.1rem;
+  line-height: 38px;
+  padding: 8px;
+}
+
+.box__header {
+  background-color: #A82834;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.box__header img { filter: brightness(0) invert(1); }
+
+/* Play Center */
+.play { display: flex; justify-content: center; align-items: center; }
+
+/* =========================
+   Media Queries
+========================= */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .leistungen__text h1 { font-size: 1.5rem;}
+  .untersuchungen__container { grid-template-columns: 1fr; gap: 20px; }
+  .untersuchungen__box p { line-height: 28px; font-size: 1rem; }
+  .box__header h3 { font-size: 1.1rem; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .leistungen__text h1 { font-size: 1.6rem; }
+  .untersuchungen__container { gap: 30px; }
+  .untersuchungen__box p { line-height: 32px; font-size: 1rem;}
+}
+
+
+/* Landscape Adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+  .untersuchungen__box p { line-height: 20px; font-size: 0.5rem; padding: 20px; }
+  .box__header h3 { font-size: 1rem; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+   .untersuchungen__box p { line-height: 20px; font-size: 0.8rem; padding: 20px; }
+  .box__header h3 { font-size: 1.1rem; }
+}

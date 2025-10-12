@@ -1,0 +1,118 @@
+ /* =========================
+   Main Three Section
+========================= */
+.main__three { padding: 60px 0; }
+
+.ärzte__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.288);
+}
+
+.arzt__container { margin-top: 45px; }
+
+ .arzt__one, .arzt__two {
+  display: flex;
+  gap: 30px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: flex-start; 
+    background-color: rgba(240, 238, 238, 0.5);
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+  backdrop-filter: blur(10px);
+}
+
+.arzt__one img,
+.arzt__two img {
+  width: 100%;        
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;       
+  border-radius: 10px;
+  object-fit: cover;  
+}
+.arzt__one{
+    margin-bottom: 40px;
+}
+
+.arzt__box h2 {
+  color: #A82834;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.288);
+}
+
+.arzt__box h3 {
+  margin: 10px 0 15px 0;
+  color: #555;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.288);
+}
+
+.arzt__box p {
+  font-size: 1.1rem;
+  line-height: 28px;
+  color: #555;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 15px;
+ 
+}
+.ärzte__header h1{
+    font-size: 1.8rem;
+}
+.arzt__box span { margin-left: 10px; }
+
+/* =========================
+   Media Queries
+========================= */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ärzte__header h1 { font-size: 1.5rem; }
+  .arzt__one { flex-direction: column;align-items: center;}
+  .arzt__two { flex-direction: column-reverse;align-items: center; }
+  .arzt__box h2, .arzt__box h3 { text-align: center; }
+  .arzt__one img,
+  .arzt__two img {min-width:auto;height: auto;}
+  .arzt__box p {
+  font-size: 1rem;
+  line-height: 28px;
+  color: #555;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 15px;
+ 
+}
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ärzte__header h1 { font-size: 1.6rem; }
+  .arzt__one { flex-direction: column; align-items: center; }
+  .arzt__two { flex-direction: column-reverse;align-items: center; }
+  .arzt__box h2, .arzt__box h3 { text-align: center; }
+  .arzt__box p { font-size: 1rem; line-height: 25px; }
+}
+
+/* Landscape */
+ @media (max-width: 767px) and (orientation: landscape) {
+  .arzt__box p { font-size: 0.6rem; line-height: 25px; }
+  .arzt__box h2, .arzt__box h3 { font-size: 1rem; }
+  .arzt__two img {min-width:auto;height: auto;}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+   .arzt__box p { font-size: 0.9rem; line-height: 25px; }
+   .arzt__box h2, .arzt__box h3 { font-size: 1.1rem; }
+}
+
+
+
+
+
+
+
+
+

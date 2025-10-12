@@ -1,0 +1,138 @@
+ .notfall{
+    height:auto;
+    padding: 0 0 60px 0;
+}
+.notfall__wrapper{
+    height: auto;
+    padding: 40px ;
+  background: linear-gradient(rgba(255, 255, 255, 0.527), rgb(255, 255, 255)),
+              url("../../Assets/Praxis-images/notfall.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+ 
+}
+.notfall__header{
+    color: #555;
+    text-align: center;
+}
+.notfall__header span{
+    color:#A82834;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+.notfall__box span{
+  margin-left: 10px;
+}
+.notfall__box h2,
+.notfall__contacts h2{
+  color: #A82834;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 30px;
+}
+.notfall__box p,
+.notfall__box2 p{
+   line-height: 25px ;
+   font-size: 1.1rem;
+   color: #555;
+}
+.notfall__box2{
+  background-color: #f7f7f7;
+  padding: 30px 0 30px 0;
+  margin-top: 30px;
+         box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+ .notfall__box__header {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.alarm-icon {
+  animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1); 
+  }
+}
+.notfall__box2 h2{
+  color: #555;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+.notfall__contacts{
+  margin-top: 30px;
+}
+.contacts__list{
+  display: flex;
+   justify-content: space-around;
+}
+
+.contacts__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact__card {
+  padding: 15px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  line-height: 1.6;
+  color: #555;
+    background-color: rgba(240, 238, 238, 0.5);
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+  backdrop-filter: blur(10px);
+}
+
+
+
+
+
+/*Media Screen */
+
+ @media screen and (max-width: 767px) {
+.notfall__box p,
+.notfall__box2 p{font-size: 1rem}
+.notfall__box__header h2{font-size: 1.3rem;}
+.notfall__box h2,
+.notfall__contacts h2{font-size: 1.3rem;}
+.notfall__contacts{margin-top: 30px;}
+}
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+.notfall__box p,
+.notfall__box2 p{font-size: 1rem}
+.notfall__box__header h2{font-size: 1.3rem;}
+.notfall__box h2,
+.notfall__contacts h2{font-size: 1.3rem;}
+.notfall__contacts{margin-top: 30px;}
+ }
+
+
+/* //Landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+ .notfall__box p,
+.notfall__box2 p{
+   line-height: 20px ;
+   font-size: 0.6rem;
+   color: #555;
+}
+ 
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+ .notfall__box p,
+.notfall__box2 p{
+   line-height: 25px ;
+   font-size: 0.9rem;
+   color: #555;
+}
+}
+

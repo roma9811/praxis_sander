@@ -1,0 +1,96 @@
+.footer {
+    height: auto;
+    padding: 60px 10px 60px 10px;
+    background-color:#F0EEEE;
+    box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__container h2 
+    {margin-bottom: 15px;
+    color: #A52733;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer__container p,
+.footer__container li {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.info p {
+    max-width: 300px;
+    width: 100%;
+}
+
+.links,
+.kontakt {
+    color: #555;
+}
+
+.links ul li{
+    display: flex;
+    align-items: center;
+}
+
+.impressum_link,
+.datenschutz_link {
+    color: #555;
+}
+
+.anfarht iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Mobile Version */
+@media screen and (max-width: 767px) {
+    .footer__container {display: flex;flex-direction: column;align-items: center;}
+    .logo__footer{display: flex;flex-direction: column;align-items: center;}
+    .footer__container h2 {margin: 30px 0 25px 0;color: #A52733;text-align: center;}
+    .footer__container p,
+    .footer__container li {font-size: 1rem;line-height: 1.5;color: #555;text-align: center;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer__container {display: flex;flex-wrap: wrap;align-items: none;gap: 15px;}
+    .logo__footer{display: flex;flex-direction: column;align-items: center;}
+    .footer__container h2 {margin: 20px;color: #A52733;font-size: 25px;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);text-align: center;}
+    .footer__container p,
+    .footer__container li {text-align: center; font-size: 1.1rem;}}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    .footer__container {display: flex;flex-wrap: wrap;align-items:none;gap: 25px;}
+    .logo__footer{display: flex;flex-direction: column;align-items: center;}
+    .footer__container h2 {margin: 20px;color: #A52733;font-size: 25px;text-align: center;}
+    .footer__container p,
+    .footer__container li {text-align: center;}
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
