@@ -21,7 +21,6 @@ export const MainComponentThree = () => {
   }, []);
 
   if (!arztData) {
-    // Skeleton пока данные загружаются
     return (
       <div className="main__three">
         <div className="container">

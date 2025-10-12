@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/material/Box";
 
-// функция для очистки HTML (если ACF возвращает <p>)
+ 
 const decodeHtml = (html) => {
   const txt = document.createElement("textarea");
   txt.innerHTML = html;
@@ -23,8 +23,7 @@ export const Kontakt = () => {
       .then((page) => setData(page.acf))
       .catch((err) => console.error(err));
   }, []);
-
-  // --- Пока данные загружаются — показываем Skeleton ---
+ 
   if (!data)
     return (
       <Box sx={{ p: 4 }}>
@@ -34,8 +33,7 @@ export const Kontakt = () => {
         <Skeleton variant="rectangular" width="100%" height={120} sx={{ mt: 2 }} />
       </Box>
     );
-
-  // --- После загрузки данных ---
+ 
   return (
     <AnimatedPage>
       <div className="kontakt">

@@ -42,7 +42,6 @@ export const NavbarComponent = () => {
     <div className="navbar">
       <div className="container">
         <nav className="nav__box">
-          {/* Логотип */}
           <div className="logo">
             <Button
               className="nav-button"
@@ -86,10 +85,6 @@ export const NavbarComponent = () => {
               Untersuchungen
             </Button>
           </li>
-    
-
-            
-
               {/* Notfall */}
               <li>
                 <Button
@@ -102,27 +97,25 @@ export const NavbarComponent = () => {
                 </Button>
               </li>
                 {/* Kontakt */}
- <li>
-  <Button
-    component={Link}
-    to="/kontakt"
-    onClick={() => setIsMenuOpen(false)}
-    startIcon={<Contact size={28} color="#A82834" />}
-    sx={{
-      border: '2px solid #A82834',
-      borderRadius: '12px',
-      color: '#A82834',
-      textTransform: 'none',
-      fontWeight: 500,
-      transition: 'all 0.3s ease',
-      padding:"10px"
-    }}
-  >
-    Kontakt
-  </Button>
-</li>
-
-
+               <li>
+                  <Button
+                    component={Link}
+                    to="/kontakt"
+                    onClick={() => setIsMenuOpen(false)}
+                    startIcon={<Contact size={28} color="#A82834" />}
+                    sx={{
+                    border: '2px solid #A82834',
+                    borderRadius: '12px',
+                    color: '#A82834',
+                    textTransform: 'none',
+                    fontWeight: 500,
+                    transition: 'all 0.3s ease',
+                    padding:"10px"
+                  }}
+                >
+                Kontakt
+                  </Button>
+                        </li>
             </ul>
           </div>
           
