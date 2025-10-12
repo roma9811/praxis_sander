@@ -36,7 +36,7 @@ export const Vorsorge = () => {
       .catch((err) => console.error("Fehler beim Laden:", err));
   }, []);
 
-  // --- Skeleton для загрузки ---
+ 
   if (!data)
     return (
       <Box sx={{ p: 4 }}>

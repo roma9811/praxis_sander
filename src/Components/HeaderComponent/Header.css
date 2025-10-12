@@ -70,7 +70,7 @@
   .praxis__text h1 {font-size: 1.7rem}
   .praxis__text p {font-size: 1.25rem; line-height: 28px;}
   .praxis__image .image-gallery {width: 100%; max-width: 100%; margin: 0 auto; min-width: 0;}
-  .praxis__image img {width: 80%;max-width: 100%;}
+  .praxis__image img {width: 100%;max-width: 100%;}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1500px) {
@@ -78,7 +78,7 @@
   .praxis__text h1 {font-size: 2rem}
   .praxis__text p{max-width: 400px;width: 100%;text-align: none;font-size: 1.2rem;line-height: 1.875rem;}
     .praxis__image img {
-    width: 80%;
+    width: 100%;
     max-width: 100%;
   }
 }
