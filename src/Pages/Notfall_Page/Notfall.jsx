@@ -46,7 +46,7 @@ export const Notfall = () => {
           <div className="container">
             <div className="notfall__header">
               <h1>
-                <span>Im Notfall</span> - so handeln Sie richtig!
+                Im <span>Notfall</span>
               </h1>
             </div>
           </div>

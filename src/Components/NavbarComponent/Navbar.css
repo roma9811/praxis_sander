@@ -2,14 +2,13 @@
    Navbar
 ========================= */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0; left: 0;
   width: 100%;
   background: white;
   z-index: 9999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 .nav__box {
   display: flex;
   justify-content: space-between;

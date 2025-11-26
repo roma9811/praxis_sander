@@ -41,16 +41,8 @@ html, body, #root, .App {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-body {
-  padding-top: 90px;
-}
-
 /* ---- responsive breakpoints ---- */
 @media screen and (max-width: 767px) {
-  body {
-  padding-top: 70px;
-}
   .container {
     padding: 15px;
   }

@@ -69,7 +69,7 @@ export const MainComponent = () => {
                 {data["mo_-_di_-_do_offnungszeiten"] || "—"}
               </li>
               <li>
-                <span>Mi - Fr:</span><br />
+                <span>Mi und Fr:</span><br />
                 {data["mi_-_fr_offnungszeiten"] || "—"}
               </li>
             </ul>
@@ -94,7 +94,7 @@ export const MainComponent = () => {
                 {data["mo_-_di_-_do_telefonsprechstunden"] || "—"}
               </li>
               <li>
-                <span>Mi - Fr:</span><br />
+                <span>Mi und Fr:</span><br />
                 {data["mi_-_fr_hours"] || "—"}
               </li>
             </ul>
