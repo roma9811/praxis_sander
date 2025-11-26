@@ -104,7 +104,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-   .arzt__box p { font-size: 0.9rem; line-height: 25px; }
+   .arzt__box p { font-size: 0.8rem; line-height: 25px; }
    .arzt__box h2, .arzt__box h3 { font-size: 1.1rem; }
 }
 

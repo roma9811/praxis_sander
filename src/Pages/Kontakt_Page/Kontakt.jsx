@@ -57,16 +57,16 @@ export const Kontakt = () => {
                 <ul>
                   <li>{decodeHtml(data.kontakt_name)}</li>
                   <li>
-                    <Phone size={24} color="#A82834" /> {decodeHtml(data.kontakt_tel)}
+                    <Phone size={31} color="#A82834"/> {decodeHtml(data.kontakt_tel)}
                   </li>
                   <li>
-                    <Printer size={24} color="#A82834" /> {decodeHtml(data.kontakt_fax)}
+                    <Printer size={31} color="#A82834" /> {decodeHtml(data.kontakt_fax)}
                   </li>
                   <li>
-                    <Mail size={24} color="#A82834" /> {decodeHtml(data.kontakt_email)}
+                    <Mail size={31} color="#A82834" /> {decodeHtml(data.kontakt_email)}
                   </li>
                   <li>
-                    <MapPin size={24} color="#A82834" /> {decodeHtml(data.kontakt_adresse)}
+                    <MapPin size={31} color="#A82834" /> {decodeHtml(data.kontakt_adresse)}
                   </li>
                 </ul>
 

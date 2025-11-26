@@ -102,7 +102,7 @@
   .kontakt__box h2 { font-size: 1.2rem; }
   .öffnungszeiten__box li,
   .telefon__box li,
-  .kontakt__box li { font-size: 0.9rem; line-height: 30px; }
+  .kontakt__box li { font-size: 1rem; line-height: 30px; }
 
   .praxis__info {display: grid;;gap: 10px; grid-template-columns: 1fr 1fr;}
 }
@@ -113,7 +113,7 @@
   .kontakt__box h2 { font-size: 1.4rem; }
   .öffnungszeiten__box li,
   .telefon__box li,
-  .kontakt__box li { font-size: 1rem; line-height: 30px; }
+  .kontakt__box li { font-size: 1.1rem; line-height: 30px; }
 
   .praxis__info {display: grid;;gap: 10px; grid-template-columns: 1fr 1fr;}
 }
