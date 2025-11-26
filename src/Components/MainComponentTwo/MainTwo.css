@@ -86,7 +86,7 @@
 
 /* Landscape Adjustments */
 @media (max-width: 767px) and (orientation: landscape) {
-  .untersuchungen__box p { line-height: 20px; font-size: 0.5rem; padding: 20px; }
+  .untersuchungen__box p { line-height: 20px; font-size: 0.6rem; padding: 10px; }
   .box__header h3 { font-size: 1rem; }
 }
 

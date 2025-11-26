@@ -146,7 +146,7 @@
 .kontakt__flex{display: flex;flex-direction: column;}
 .anschrift_wrapper li{line-height: 30px;font-size: 1rem;}
 .bestellung__container{display: flex;flex-direction: column;gap: 10px;font-size: 1rem;align-items: center;}
-.bestellungen_box h2{font-size: 1.3rem;text-align: center;}
+.bestellungen_box h2{font-size: 1.3rem;}
 .bestellungen_box p{font-size: 1rem;  ;}
 .img__überweisung{position: absolute;width: 80%;left: 50px;top: 20px;}
 .img__rezept{max-width:auto;}
@@ -187,7 +187,7 @@
  
 /* Landscape */
 @media screen and (max-width: 767px) and (orientation: landscape) {
-.anschrift_wrapper li{line-height: 30px;font-size: 0.9rem;}
+.anschrift_wrapper li{line-height: 30px;font-size: 1rem;}
 .bestellungen_box p{line-height: 25px;font-size: 0.7rem;}
 .termin__content {font-size: .7rem;line-height: 1.6;}
 }

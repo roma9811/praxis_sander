@@ -120,8 +120,8 @@
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
 .vorsorge__services ul,
-.diagnostik__box ul{font-size: 0.7rem;line-height: 25p}
-.vorsorge__text p{font-size:0.6rem;}
+.diagnostik__box ul{font-size: 0.7rem;line-height: 25px}
+.vorsorge__text p{font-size:0.6rem;line-height: 20px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
