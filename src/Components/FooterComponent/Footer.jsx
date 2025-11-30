@@ -23,7 +23,7 @@ export const FooterComponent = () => {
   };
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/291")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/291")
       .then((res) => res.json())
       .then((page) => setData(page.acf))
       .catch((err) => console.error(err));
