@@ -14,7 +14,7 @@ export const Datenschutz = () => {
   };
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/391") 
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/391") 
       .then((res) => res.json())
       .then((res) => setData(res.acf))
       .catch((err) => console.error("Fehler beim Laden:", err));

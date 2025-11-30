@@ -18,7 +18,7 @@ export const Kontakt = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/301")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/301")
       .then((res) => res.json())
       .then((page) => setData(page.acf))
       .catch((err) => console.error(err));

@@ -30,7 +30,7 @@ export const Vorsorge = () => {
   const cleanHtml = (html) => decodeHtml(html.replace(/<[^>]+>/g, "").trim());
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/337")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/337")
       .then((res) => res.json())
       .then((res) => setData(res.acf))
       .catch((err) => console.error("Fehler beim Laden:", err));

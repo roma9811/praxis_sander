@@ -14,7 +14,7 @@ export const MainComponentThree = () => {
   };
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/205")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/205")
       .then((res) => res.json())
       .then((data) => setArztData(data.acf))
       .catch((err) => console.error("Fehler beim Laden:", err));

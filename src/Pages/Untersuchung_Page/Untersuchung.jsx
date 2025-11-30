@@ -14,7 +14,7 @@ export const Untersuchung = () => {
   };
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/346")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/346")
       .then((res) => res.json())
       .then((data) => setData(data.acf))
       .catch((err) => console.error("Fehler beim Laden:", err));

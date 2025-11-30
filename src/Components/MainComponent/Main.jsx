@@ -9,7 +9,7 @@ export const MainComponent = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://hausarztpraxis-sander.de/wp-json/wp/v2/pages/168")
+    fetch("https://admin.hausarztpraxis-sander.de/wp-json/wp/v2/pages/168")
       .then((res) => res.json())
       .then((page) => setData(page.acf))
       .catch((err) => console.error("Fehler beim Laden:", err));
