@@ -20,7 +20,7 @@
 }
 .anschrift_wrapper{
     background-color: #fff;
-    padding: 30px ;
+    padding: 10px ;
 }
 .anschrift_wrapper h2{
     margin-bottom: 20px;
@@ -44,7 +44,7 @@
  }
 .anschrift_wrapper li{
     display: flex;
-    gap: 15px;
+    gap: 8px;
     align-items: center;
     padding-bottom: 8px;
 }
@@ -169,7 +169,7 @@
 .bestellungen_box p{font-size: 1.1rem; text-align: center;}
 .img__überweisung{position: absolute;width: 80%;left: 50px;top: 20px;}
 .img__rezept{max-width:auto;}
- .termin__text span{
+.termin__text span{
     margin-left: 10px;
  }
 .termin__content {font-size: 1.1rem;line-height: 1.6;}

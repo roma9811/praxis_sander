@@ -95,7 +95,7 @@ export const Kontakt = () => {
                   <h2>Rezept- und Überweisungsbestellungen</h2>
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: decodeHtml(data.rezept_text || ""),
+                      __html: decodeHtml(data.rezept_text || "")
                     }}
                   />
                 </div>
