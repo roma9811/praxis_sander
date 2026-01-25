@@ -1,6 +1,6 @@
  import "./Main.css";
 import { useEffect, useState } from "react";
-import { Clock, PhoneCall, Contact } from "lucide-react";
+import { Clock, SquareParking , Contact } from "lucide-react";
 import { motion } from "framer-motion";
 import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/material/Box";
@@ -60,7 +60,7 @@ export const MainComponent = () => {
           >
             <div className="öffnungszeiten__header">
               <h2>
-                <Clock size={30} color="#A82834" /> Öffnungszeiten:
+                <Clock size={30} color="#A82834" /> Öffnungs- und Telefonzeiten:
               </h2>
             </div>
             <ul>
@@ -69,13 +69,17 @@ export const MainComponent = () => {
                 {data["mo_-_di_-_do_offnungszeiten"] || "—"}
               </li>
               <li>
-                <span>Mi und Fr:</span><br />
-                {data["mi_-_fr_offnungszeiten"] || "—"}
+                <span>Mi:</span><br />
+                {data["mi_offnungszeiten"] || "—"}
+              </li>
+               <li>
+                <span>Fr:</span><br />
+                {data["fr_offnungszeiten"] || "—"}
               </li>
             </ul>
           </motion.div>
 
-          {/* Telefonsprechstunden */}
+          {/* Parken */}
           <motion.div
             className="telefon__box"
             initial={{ opacity: 0, y: 50 }}
@@ -84,18 +88,15 @@ export const MainComponent = () => {
           >
             <div className="telefon__header">
               <h2>
-                <PhoneCall size={30} color="#A82834" />
-                Telefonsprechstunden:
+                <SquareParking  size={30} color="#A82834" />
+                Parken:
               </h2>
             </div>
             <ul>
+              
               <li>
-                <span>Mo - Di - Do: </span><br />
-                {data["mo_-_di_-_do_telefonsprechstunden"] || "—"}
-              </li>
-              <li>
-                <span>Mi und Fr:</span><br />
-                {data["mi_-_fr_hours"] || "—"}
+                <span>Parkmöglichkeiten:</span><br />
+                {data["parken"] || "—"}
               </li>
             </ul>
           </motion.div>
