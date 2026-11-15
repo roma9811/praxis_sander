@@ -1,0 +1,89 @@
+.datenschutz {
+  padding: 60px 20px;
+  background-color: #fff;
+  flex: 1;
+}
+
+.datenschutz-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px ;
+  border-radius: 12px;
+  background-color: rgba(240, 238, 238, 0.5);
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+  backdrop-filter: blur(10px);
+}
+
+.datenschutz h1 {
+  text-align: center;
+  color:#A82834;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.datenschutz h2 {
+  color: #A82834;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-left: 4px solid #A82834;
+  padding-left: 12px;
+}
+
+.datenschutz h3 {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.datenschutz p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.datenschutz a {
+  color:  #A82834;
+  text-decoration: none;
+}
+
+.datenschutz a:hover {
+  text-decoration: underline;
+}
+
+ @media screen and (max-width: 767px) {
+.datenschutz h1 {font-size: 1.3rem;}
+.datenschutz h2 {font-size: 1.1rem;}
+.datenschutz h3 {font-size: 1rem;}
+.datenschutz p {font-size: .8rem}
+}
+ 
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.datenschutz h1 {font-size: 1.4rem;}
+.datenschutz h2 {font-size: 1.3rem;}
+.datenschutz h3 {font-size: 1.1rem;}
+.datenschutz p {font-size: 1rem}
+}
+
+
+
+/* Landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+ .datenschutz h1 {font-size: 1.2rem;}
+.datenschutz h2 {font-size: .9rem;}
+.datenschutz h3 {font-size: .8rem;}
+.datenschutz p {font-size: .6rem}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+.datenschutz h1 {font-size: 1.4rem;}
+.datenschutz h2 {font-size: 1.1rem;}
+.datenschutz h3 {font-size: 1rem;}
+.datenschutz p {font-size: .9rem}
+
+}
+

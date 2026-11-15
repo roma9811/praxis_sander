@@ -1,0 +1,203 @@
+.untersuchung{
+    background-color:#fff;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+}
+
+.untersuchungen__wrapper {
+    height: auto;
+    padding: 40px ;
+  background: linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)),
+              url("../../Assets/Praxis-images/stetoskop.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+ 
+}
+.untersuchungen__header h1{
+    color:#555;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+    text-align: center;
+}
+.untersuchungen__header span{
+    color: #A12632;
+}
+.ekg__box,
+.belastung__box,
+.ultraschall__box,
+.lzekg__box,
+.lz_rr__box,
+.spirometrie__box{
+    display: flex;
+    gap: 25px;
+    color: #555;
+    align-items: center;
+}
+.ekg__box,
+.belastung__box,
+.ultraschall__box,
+.lzekg__box,
+.spirometrie__box
+{
+    margin-top: 70px;
+}
+
+.belastung__box img,
+.ekg__box img,
+.ultraschall__box img,
+.lzekg__box img,
+.lz_rr__box img,
+.spirometrie__box img
+{
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+}
+ 
+ .ekg__box h2,
+.belastung__box h2,
+.ultraschall__box h2,
+.lzekg__box h2,
+.lzrr_text h2,
+.spirometrie__text h2
+ {
+    margin-bottom: 20px;
+    color: #A12632;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+ 
+.ekg__box p,
+.belastung__box p,
+.ultraschall__box p,
+.lzekg__box p,
+.lzrr_text p,
+.spirometrie__text p
+{
+    font-size: 1.1rem;
+    line-height: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+ 
+
+.belastung__box__wrapper,
+.lzekg__box__wrapper{
+    margin-top: 50px;
+  background-color: #F7F7F7;  
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 50px 0;
+
+}
+.spirometrie__box{
+    padding-bottom: 55px;
+}
+.lz_rr__box{
+    margin-top: 30px;
+}
+
+
+
+
+
+/* Mobile Version */
+
+@media screen and (max-width: 767px) {
+
+.belastung__box,
+.lzekg__box,
+.spirometrie__box{display: flex;flex-direction: column;align-items: center;gap: 20px;color: #555;}
+.ultraschall__box,
+.lz_rr__box,
+.ekg__box
+{flex-direction: column-reverse;}
+.belastung__box,
+.ultraschall__box,
+.lzekg__box,
+.spirometrie__box
+{margin-top: 40px;}
+ .ekg__box h2,
+.belastung__box h2,
+.ultraschall__box h2,
+.lzekg__box h2,
+.lzrr_text h2,
+.spirometrie__text h2
+ {margin-bottom: 20px;text-align: center;}
+
+.ekg__box p,
+.belastung__box p,
+.ultraschall__box p,
+.lzekg__box p,
+.lzrr_text p,
+.spirometrie__text p
+{font-size: 1rem;line-height: 25px}
+.spirometrie__box{padding-bottom: 55px;}
+}
+ 
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.belastung__box,
+.ultraschall__box,
+.lzekg__box,
+.spirometrie__box
+{display: flex;flex-direction: column;align-items: center;gap: 20px;}
+.ekg__box,
+.ultraschall__box,
+.lz_rr__box{flex-direction: column-reverse;align-items: center;}
+.ekg__box,
+.belastung__box,
+.ultraschall__box,
+.lzekg__box,
+.spirometrie__box
+{ margin-top: 50px;}
+.ekg__box h2,
+.belastung__box h2,
+.ultraschall__box h2,
+.lzekg__box h2,
+.lzrr_text h2,
+.spirometrie__text h2
+ {margin-bottom: 20px;text-align: center;}
+
+.ekg__box p,
+.belastung__box p,
+.ultraschall__box p,
+.lzekg__box p,
+.lzrr_text p,
+.spirometrie__text p
+{font-size: 1.1rem;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px){
+.belastung__box img,
+.ekg__box img,
+.ultraschall__box img,
+.lzekg__box img,
+.lz_rr__box img,
+.spirometrie__box img
+{border-radius: 12px;max-width: 480px;height: 100%;max-height: 500px;width: 100%;}
+}
+
+
+/* Landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+.ekg__box p,
+.belastung__box p,
+.ultraschall__box p,
+.lzekg__box p,
+.lzrr_text p,
+.spirometrie__text p
+{font-size: 0.6rem;line-height: 20px} 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+.ekg__box p,
+.belastung__box p,
+.ultraschall__box p,
+.lzekg__box p,
+.lzrr_text p,
+.spirometrie__text p
+{font-size:1rem;line-height: 25px} 
+}
+

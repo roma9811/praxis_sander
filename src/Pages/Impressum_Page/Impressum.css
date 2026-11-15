@@ -1,0 +1,83 @@
+ .impressum {
+  padding: 60px 20px;
+  background-color: #fff;
+  flex: 1;
+}
+
+.impressum-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(240, 238, 238, 0.5);
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.452);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 12px;
+  
+}
+
+.impressum h1 {
+  font-size: 2.2rem;
+  color: #A82834;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.impressum-block {
+  margin-bottom: 30px;
+}
+
+.impressum h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-left: 4px solid #A82834;
+  padding-left: 10px;
+}
+
+.impressum p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.impressum a {
+  color:#A82834;
+  text-decoration: none;
+}
+
+.impressum a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Version */
+
+@media screen and (max-width: 767px) {
+.impressum h1 {font-size: 1.3rem}
+.impressum h2 {font-size: 1.2rem;}
+.impressum p {font-size: .9rem;}
+}
+ 
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.impressum h1 {font-size: 1.4rem}
+.impressum h2 {font-size: 1.3rem;}
+.impressum p {font-size: 1rem;}
+}
+
+
+
+/* Landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+ .impressum p {font-size: 0.6rem;line-height: 1.6;}
+ .impressum h2 {font-size: 1rem;}
+ .impressum h1 {font-size: 1.2rem}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .impressum p {font-size: 0.9rem;line-height: 1.6;}
+ .impressum h2 {font-size: 1.2rem;}
+ .impressum h1 {font-size: 1.4rem}
+
+}
+
