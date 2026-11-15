@@ -54,7 +54,116 @@
   border-radius: 15px; 
 }
  
+/* Urlaub Banner */
+.vacation-banner {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background: #f8f8f8;
+}
 
+.vacation-banner button {
+  width: 100%;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: none;
+  background: transparent;
+  color:  #676767;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+ .vacation-banner button {
+  transition: all 0.3s ease;
+}
+
+.vacation-banner button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.411);
+  border-radius: 12px;
+}
+/* Popup Hintergrund */
+.vacation-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Popup Fenster */
+.vacation-popup {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  color: #555;
+  line-height: 1.6;
+}
+
+.vacation-popup h2 {
+  color: #a92332;
+  margin-top: 0;
+}
+
+.vacation-date {
+  font-weight: 600;
+  color: #a92332;
+}
+
+.vacation-substitute {
+  margin: 20px 0;
+}
+
+/* Close Button */
+.vacation-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  color: #777;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Confirm Button */
+.vacation-confirm {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #a92332;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.vacation-confirm:hover {
+  background: #921d29;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .vacation-popup {
+    padding: 28px 22px;
+  }
+
+  .vacation-banner button {
+    font-size: 13px;
+  }
+}
 
 /* Media__Screen */
  @media screen and (max-width: 767px) {
